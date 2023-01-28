@@ -60,6 +60,16 @@ curl http://{host}/catalog/{product_id}
 
 ### API that requires authentication
 
+Example product json
+```json
+{
+    "sku": "test_sku",
+    "name": "test_name",
+    "price": 100,
+    "brand": "test_brand"
+}
+```
+
 Create product
 ```commandline
 curl -d "{product_json}" -X POST http://{host}/catalog
