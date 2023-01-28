@@ -21,6 +21,14 @@ DATABASE_URL=
 ```
 
 ## Installation via docker
+Create new file `.envs/.db` based on example
+```commandline
+POSTGRES_DB=
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+```
+
+And run
 ```commandline
 make up
 ```
