@@ -62,9 +62,9 @@ Admin panel
 curl http://{host}/admin/
 ```
 
-### Open API
+### Swagger API
 ```commandline
-curl http://{host}/catalog/openapi
+curl http://{host}/docs/
 ```
 
 ### API that word without authentication
