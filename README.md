@@ -1,7 +1,6 @@
 # Catalog system for products
 
-Projects run sqlite, so you do not need to set up any db. 
-Also, there is no .env file for faster start.
+Projects run sqlite, so you do not need to set up any db.
 
 
 ## Prerequisites
@@ -15,6 +14,19 @@ make
 ```commandline
 pip install pip-tools
 make install
+```
+
+Create new file `.envs/.development` based on example
+```commandline
+DEBUG=
+SECRET_KEY=
+ALLOWED_HOSTS=
+DATABASE_URL=
+```
+
+Run the following commands
+```commandline
+python manage.py makemigrations
 python manage.py runserver
 ```
 
