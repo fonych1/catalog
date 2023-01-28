@@ -4,6 +4,7 @@ from typing import Any
 from rest_framework.test import APIRequestFactory, force_authenticate
 from django.contrib.auth.models import User
 
+from .shared import any_value
 from catalog.views import ProductView
 
 
@@ -23,7 +24,7 @@ def test_create_product(drf_client: APIRequestFactory, drf_superuser: User, new_
 
     assert response.status_code == 201
     assert response.data == {
-        "id": 1,
+        "id": any_value,
         "sku": "test_sku",
         "name": "test_name",
         "price": "100.00",

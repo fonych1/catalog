@@ -32,7 +32,7 @@ def test_update_product(drf_client: APIRequestFactory, drf_superuser: User, new_
     assert response.status_code == 200
 
     expected_response = {
-        "id": 1,
+        "id": product_id,
         "sku": "new_sku",
         "name": "new_name",
         "price": "120.00",

@@ -19,3 +19,19 @@ lint: ## Run code linters
 
 test: ## Run tests
 	pytest
+
+up: ## Compose docker app
+	@docker-compose up -d --build --remove-orphans
+
+down: ## Shutdown docker app
+	@docker-compose down
+
+shell sh: ## Spawn shell inside docker
+	@docker-compose exec catalog-web-1 /bin/sh
+
+ps: ## List all processes
+	@docker-compose ps
+
+logs: ## View logs
+	@docker-compose logs -f
+

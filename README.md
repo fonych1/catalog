@@ -8,6 +8,8 @@ Projects run sqlite, so you do not need to set up any db.
 python 3.9+
 pip-tools 6.12.1+
 make
+docker
+docker-compose
 ```
 
 ## Installation
