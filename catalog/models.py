@@ -24,5 +24,5 @@ def product_post_save(sender, **kwargs):
         verb=f'Product with id {kwargs["instance"].id} was updated',
         target=kwargs['instance'],
         action_object=kwargs['instance'],
-        recipient_list=User.objects.filter(is_staff=True)
+        recipient=User.objects.filter(is_staff=True)
     )
