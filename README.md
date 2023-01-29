@@ -1,8 +1,5 @@
 # Catalog system for products
 
-Projects run sqlite, so you do not need to set up any db.
-
-
 ## Prerequisites
 ```commandline
 python 3.9+
