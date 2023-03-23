@@ -27,7 +27,7 @@ down: ## Shutdown docker app
 	@docker-compose down
 
 shell sh: ## Spawn shell inside docker
-	@docker-compose exec catalog-web-1 /bin/sh
+	@docker-compose exec web /bin/sh
 
 ps: ## List all processes
 	@docker-compose ps
